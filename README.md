@@ -12,6 +12,21 @@ Didn't make sense? Read on.
 
 This project was inspired by the Magic Mirror project ([Github](https://github.com/HackerShackOfficial/Smart-Mirror), [Youtube](https://www.youtube.com/watch?v=fkVBAcvbrjU)), which projects a display from behind a mirror. The screen is connected to your Pi to display news, weather and time. The idea is brilliant, and I wanted to extend it to display a few of my custom params
 
+
+### Features
+- White monospace text on black background looks good, especially at night
+- Displays:
+    - Time in 24 hour format
+    - Randomly choosen quote from `/static/quotes.txt`
+    - Current temperature and city name
+    - Date, day, month, year
+    - Network activity in kBps (upload and download speeds in realtime)
+    - CPU and RAM usage percentage
+- Updates in real time, ideal for use as a logger/monitor or simply a _nerd photo frame_
+- Uses CSS3 Grids for easy addition/deletion/rearrangement of monitoring widgets
+- Uses vanilla JS on the frontend, Flask backend. Lightweight, even for RPi.
+
+
 ### Usecase
 My personal usecase was something along the lines of a digial clock that also displays some nerd stats like network activity and CPU/RAM usage. 
 

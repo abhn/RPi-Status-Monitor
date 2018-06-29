@@ -88,11 +88,12 @@ let refresh_network = () => {
 	download = Math.round(download / 1000); // kb conversion
 	upload = Math.round(upload / 1000);
 	
-	let download_string = `D&darr;: ${download} kBps`;
-	let upload_string = `U&uarr;: ${upload} kBps`;
+	// cross them because for the rpi's wlan0 interface, uploading = downloading for the rest of us
+	let download_string = `D&darr;: ${upload} kBps`;
+	let upload_string = `U&uarr;: ${download} kBps`;
 	
-	dom_upload.innerHTML = download_string;
-	dom_download.innerHTML = upload_string; 
+	dom_download.innerHTML = download_string;
+	dom_upload.innerHTML = upload_string; 
 }
 
 let refresh_system = () => {
@@ -103,8 +104,8 @@ let refresh_system = () => {
 	let dom_cpu = document.getElementById('cpu');
 	let dom_ram = document.getElementById('ram');
 	
-	let cpu_string = `CPU: ${cpu}% in use`;
-	let ram_string = `RAM: ${ram}% in use`;
+	let cpu_string = `CPU: ${cpu}%`;
+	let ram_string = `RAM: ${ram}%`;
 	
 	dom_cpu.innerHTML = cpu_string;
 	dom_ram.innerHTML = ram_string;

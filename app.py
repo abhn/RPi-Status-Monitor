@@ -41,7 +41,7 @@ def get_txrx():
     with open('/sys/class/net/wlan0/statistics/tx_bytes') as f:
         TX = int(f.read().rstrip())
 
-    time.sleep(0.250)
+    time.sleep(0.25)
 
     with open('/sys/class/net/wlan0/statistics/rx_bytes') as f:
         RX = int(f.read().rstrip()) - RX
@@ -57,9 +57,10 @@ def get_txrx():
 def get_network_stats():
     data = get_txrx()
     
+    # multiply output by 4 because the interval is 1/4th of a second
     return {
-        'upload': data['TX'],
-        'download': data['RX']
+        'upload': data['TX'] * 4,
+        'download': data['RX'] * 4
     }
 
 

@@ -17,7 +17,7 @@ This project was inspired by the Magic Mirror project ([Github](https://github.c
 - White monospace text on black background looks good, especially at night
 - Displays:
     - Time in 24 hour format
-    - Randomly choosen quote from `/static/quotes.txt`
+    - Randomly chosen quote from `/static/quotes.txt`
     - Current temperature and city name
     - Date, day, month, year
     - Network activity in kBps (upload and download speeds in realtime)

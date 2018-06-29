@@ -5,6 +5,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RPi Status Monitor</title>
+    
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}"/>
 </head>
@@ -12,11 +15,37 @@
 
     <div class="container">
 		<div class="grid-container">
-			<div class="top-left"></div>
-			<div class="top-right"></div>
-			<div class="center"></div>
-			<div class="bottom-left"></div>
-			<div class="bottom-right"></div>
+			<div class="top-left">
+				<div>
+					<div id="temperature-text" class="temperature-text"></div> 
+					<div id="weather-city" class="weather-city"></div>
+				</div>
+			</div>
+			
+			<div class="top-right">
+				<div>
+					<div id="date-string" class="date-string"></div>
+					<div id="year-string" class="year-string"></div>
+				</div>
+			</div>
+			
+			<div class="center">
+				<div id="time-text" class="time-text"></div>
+			</div>
+			
+			<div class="bottom-left">
+				<div>
+					<div id="download" class="network"></div>
+					<div id="upload" class="network"></div>
+				</div>
+			</div>
+			
+			<div class="bottom-right">
+				<div>
+					<div id="cpu" class="system"></div>
+					<div id="ram" class="system"></div>
+				</div>
+			</div>
 		</div>
     </div>
     

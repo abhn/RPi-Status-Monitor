@@ -1,5 +1,7 @@
-.body {
-
+body {
+	font-size: 100%;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -21,6 +23,10 @@
 	grid-column-end: 2;
 	grid-row-start: 1;
 	grid-row-end: 2;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .top-right {
@@ -28,6 +34,10 @@
 	grid-column-end: 4;
 	grid-row-start: 1;
 	grid-row-end: 2;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .bottom-left {
@@ -35,11 +45,58 @@
 	grid-column-end: 2;
 	grid-row-start: 3;
 	grid-row-end: 4;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.bottom-left {
+.bottom-right {
 	grid-column-start: 3;
 	grid-column-end: 4;
 	grid-row-start: 3;
 	grid-row-end: 4;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.center {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.time-text {
+	font-size: 5rem;
+}
+
+.temperature-text {
+	font-size: 3rem;
+}
+
+.weather-text {
+	font-size: 2rem;
+}
+
+.date-string {
+	font-size: 2rem;
+}
+
+.year-string {
+	font-size: 1.5rem;
+}
+
+.network {
+	font-size: 2rem;
+}
+
+.system { 
+	font-size: 2rem;
 }

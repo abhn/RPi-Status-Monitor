@@ -5,8 +5,6 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RPi Status Monitor</title>
-    
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}"/>
@@ -30,7 +28,10 @@
 			</div>
 			
 			<div class="center">
-				<div id="time-text" class="time-text"></div>
+				<div class="center-inner">
+					<div id="time-text" class="time-text"></div>
+					<div id="quote" class="quote"></div>
+				</div>
 			</div>
 			
 			<div class="bottom-left">

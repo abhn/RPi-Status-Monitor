@@ -1,7 +1,7 @@
 body {
 	font-size: 100%;
 	color: #fff;
-	font-family: 'Roboto', sans-serif;
+	font-family: monospace;
 }
 
 .container {
@@ -71,6 +71,11 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.center-inner {
+    text-align: center;
+    font-family: monospace;
 }
 
 .time-text {

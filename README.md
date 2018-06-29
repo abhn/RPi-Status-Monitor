@@ -64,10 +64,10 @@ Interesting additions possible
 - Pip install requirements `$ pip install -r requirements.txt`
 - Open `app.py` with any text editor and edit the following constants
     - `LAT` and `LON` should correspond to your location for weather updates
-    - `INTERFACE_NAME` should be your network interface, `wlan` in Pi's builtin wifi's case
+    - `INTERFACE_NAME` should be your network interface, `wlan0` in Pi's builtin wifi's case
     - Signup for [openweathermap.org](https://openweathermap.org) and get your API key. Add that key to your bashrc with `$ echo 'export OPENWEATHERAPI=<your-api-key> >> ~/.bashrc` replacing `<your-api-key` with your actual API key
 - Start development server with `$ python app.py`
-- If you're on Pi, the build in browser won't work (no support for CSS grid). Instead, download Chromium (`$ sudo apt-get install chromium-browser`) and turn on experimental features
+- If you're on Pi, the built-in browser won't work (no support for CSS grid). Instead, download Chromium (`$ sudo apt-get install chromium-browser`) and turn on experimental features
 - Open `http://localhost:5000` in your browser and enter fullscreen mode (F11). Done.
 - ?? Profit! 
 

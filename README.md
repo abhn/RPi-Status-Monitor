@@ -72,10 +72,14 @@ Interesting additions possible
 - ?? Profit! 
 
 ### TODO
-- todo
+- Automate the browser opening, server starting and going into full screen process for re-enabling things after reboot.
+- Get connected clients list, sort data consumed during session and show real time bandwidth usage (` iw dev wlan0 station dump`)
+- Maintain stats about data usage, most visited web/ip addresses in a mysql/postgres database and create a website ranking table
+- Set block lists for ip addresses/website urls
 
 ### Credits
-- todo
+- https://frillip.com/ for the guide on hostapd
+- https://github.com/HackerShackOfficial for the inspiration
 
 ### License
 - GPLv3
